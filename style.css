@@ -90,3 +90,9 @@ h3{
     text-decoration: underline;
 
 }
+
+@media (max-width: 500px) {
+    .nav {
+        width: 100vw;
+    }
+}
