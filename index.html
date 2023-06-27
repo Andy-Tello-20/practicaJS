@@ -22,7 +22,7 @@
               </svg></button>
             <h3>MENÚ</h3>
             <ul class="nav-list">
-                <li class="li"><a href="#">Inicio</a></li>
+                <li class="li"><a id="registro" href="#">Ingresar Registro</a></li>
                 <li class="li"><a href="#">Quiénes somos</a></li>
                 <li class="li"><a href="#">Servicios</a></li>
                 <li class="li"><a href="#">Qué hacemos</a></li>
@@ -30,6 +30,21 @@
             </ul>
         </nav>
     </header>
+
+    <main class="main">
+        <div class="contenedor">
+            <form class="formulario" action="#" method="get">
+
+                <input type="number" name="registrar-datos" id="registros"  placeholder="Ej: $5000">
+                <input type="number" name="registrar-interes" id="interes" placeholder="Ej: 40%">
+                <input type="number" name="registrar-salida" id="salidas" placeholder="Ej: $1000">
+                <input type="submit" id="boton-calcular" value="calcular">
+                <div class="mensaje"></div>
+            </form>
+            
+
+        </div>
+    </main>
     
     <script src="jssidebar.js"></script>
 </body>

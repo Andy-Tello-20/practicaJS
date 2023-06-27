@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
 
 header {
@@ -19,14 +20,14 @@ header {
 
 .abrir-menu,
 .cerrar-menu {
-  
+
     border: 0;
     font-size: 1.25rem;
     background-color: transparent;
     cursor: pointer;
 }
 
-.abrir-menu svg{
+.abrir-menu svg {
     color: #1c1c1c;
     width: 36px;
     height: 36px;
@@ -34,14 +35,14 @@ header {
     border-radius: 7px;
 }
 
-.cerrar-menu svg{
+.cerrar-menu svg {
     width: 30px;
     height: 30px;
     color: #ececec;
-    
+
 }
 
-.cerrar-menu svg:hover{
+.cerrar-menu svg:hover {
     background-color: #e31616;
 }
 
@@ -62,18 +63,15 @@ header {
     width: 250px;
 }
 
-.nav.visible {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.3s;
-}
 
 
 .nav-list li a {
     color: #ecececec;
     text-decoration: none;
+    font-size: 1.3rem;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     gap: 3rem;
     flex-direction: column;
@@ -81,13 +79,14 @@ header {
     align-items: center;
 }
 
-.nav-list li a:hover{
+.nav-list li a:hover {
     color: yellow;
 }
 
-h3{
+h3 {
     color: #ecececec;
     text-decoration: underline;
+    font-size: 1.5rem;
 
 }
 
@@ -95,4 +94,86 @@ h3{
     .nav {
         width: 100vw;
     }
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* MAIN */
+
+
+.contenedor {
+    opacity: 0;
+    visibility: hidden;
+    width: 800px;
+    height: 500px;
+    background-color: #1c1c1c;
+    margin: auto;
+    margin-top: 8rem;
+}
+
+
+
+.nav.visible,
+.contenedor.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "reg reg reg msg"
+        "int int int msg"
+        "sal sal sal msg"
+        "btn btn btn msg";
+
+}
+
+#registros{
+    grid-area: reg ;
+}
+#interes{
+    grid-area:int ;
+}
+#salidas{
+    grid-area:sal ;
+}
+#boton-calcular{
+    grid-area: btn;
+}
+.mensaje{
+    grid-area: msg ;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#registros,#interes,#salidas{
+    width: 89%;
+    height: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: none;
+    outline: none;
+    border: 0;
+    border-bottom: 3px solid red;
+    color: white;
+
+}
+
+#boton-calcular{
+    width: 89%;
+    height: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
