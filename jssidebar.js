@@ -13,6 +13,8 @@ cerrar.addEventListener("click", () => {
 
 let registrar = document.getElementById("registro")
 
+let salir =document.getElementById("salir")
+
 let contenedor =document.getElementsByClassName("contenedor")[0]
 
 
@@ -20,4 +22,10 @@ let contenedor =document.getElementsByClassName("contenedor")[0]
 registrar.addEventListener("click", () => {
     contenedor.classList.add("visible")
     nav.classList.remove("visible")
+})
+
+salir.addEventListener("click", () =>{
+    contenedor.classList.remove("visible")
+    nav.classList.add("visible");
+    
 })

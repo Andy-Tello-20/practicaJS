@@ -79,6 +79,13 @@ header {
     align-items: center;
 }
 
+.nav.visible,
+.contenedor.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
 .nav-list li a:hover {
     color: yellow;
 }
@@ -100,80 +107,89 @@ h3 {
 
 /* MAIN */
 
+.article{
+    background-color: #fff2cb;;
+    height: 100vh;
+}
 
 .contenedor {
     opacity: 0;
     visibility: hidden;
-    width: 800px;
-    height: 500px;
+  }
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inputs,.resultado{
+    display: flex;
+    flex-direction: column;
     background-color: #1c1c1c;
-    margin: auto;
-    margin-top: 8rem;
+    margin: 0 10px;
+    margin-bottom: 15px;
+}
+
+.inputs{
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.resultado{
+    width: 400px;
+    height: 400px;
 }
 
 
-
-.nav.visible,
-.contenedor.visible {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.3s;
-}
-
-.formulario {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "reg reg reg msg"
-        "int int int msg"
-        "sal sal sal msg"
-        "btn btn btn msg";
-
-}
-
-#registros{
-    grid-area: reg ;
-}
-#interes{
-    grid-area:int ;
-}
-#salidas{
-    grid-area:sal ;
-}
-#boton-calcular{
-    grid-area: btn;
-}
-.mensaje{
-    grid-area: msg ;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-#registros,#interes,#salidas{
-    width: 89%;
-    height: 60%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: none;
-    outline: none;
-    border: 0;
-    border-bottom: 3px solid red;
+label{
+    margin: 5px 20px;
     color: white;
-
+}
+#ventas,#interes,#salidas{
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 4px solid #bd2c2c;
+    margin: 0 20px;
+    color: white;
+    font-size: 1.5rem;
 }
 
-#boton-calcular{
-    width: 89%;
-    height: 60%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#calcular{
+    height: 53px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: #bd2c2c;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom:15px ;
+}
+
+.resp{
+  
+    height: 100%;
+    background-color: white;
+    margin: 15px;
+}
+
+.boton-salir{
+    display: flex;
+    justify-content: end;
+}
+
+#salir{
+    width: 50px;
+    height: 50px;
+    background-color: #bd2c2c;
+    color: white;
+    font-size: 1rem;
+}
+
+h4{
+    font-size: 1rem;
+    color: white;
+    margin: 15px;
 }
