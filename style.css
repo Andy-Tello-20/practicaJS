@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: #ececec;
+    background-color: #77a69c;
 }
 
 .logo {
@@ -31,7 +31,6 @@ header {
     color: #1c1c1c;
     width: 36px;
     height: 36px;
-    background-color: #a4a8e6;
     border-radius: 7px;
 }
 
@@ -90,10 +89,15 @@ header {
     color: yellow;
 }
 
+h1{
+    color: white;
+    font-size: 2rem;
+}
 h3 {
-    color: #ecececec;
-    text-decoration: underline;
+    color: rgb(15, 15, 15);
     font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
 
 }
 
@@ -108,7 +112,7 @@ h3 {
 /* MAIN */
 
 .article{
-    background-color: #fff2cb;;
+    background-color: #a4f0b8;
     height: 100vh;
 }
 
@@ -129,6 +133,7 @@ h3 {
     background-color: #1c1c1c;
     margin: 0 10px;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .inputs{
@@ -140,6 +145,7 @@ h3 {
 .resultado{
     width: 400px;
     height: 400px;
+    
 }
 
 
@@ -178,6 +184,8 @@ label{
 .boton-salir{
     display: flex;
     justify-content: end;
+    margin-right: 15px;
+    margin-top: 15px;
 }
 
 #salir{
