@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <article class="article">
+    <div class="cont-principal">
 
         <header>
             <h1>Simulador de Contabilidad</h1>
@@ -31,44 +31,19 @@
                 <h3>MENÚ</h3>
                 <ul class="nav-list">
                     <li class="li"><a id="registro" href="#">Ingresar Registro</a></li>
-                    <li class="li"><a href="#">Quiénes somos</a></li>
+                    <li class="li"><a id="busPId" href="#">Buscar por ID</a></li>
                     <li class="li"><a href="#">Servicios</a></li>
                     <li class="li"><a href="#">Qué hacemos</a></li>
                     <li class="li"><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-
-        <main class="contenedor">
-
-            <h3>Formulario</h3>
-            <form class="formulario" action="#" method="get">
-
-                <div class="inputs">
-                    <label for="ventas">Ventas:</label>
-                    <input type="number" placeholder="Ej: $5000" id="ventas" name="ventas" required>
-
-                    <label for="interes">Interés:</label>
-                    <input type="number" placeholder="Ej: 40%" id="interes" name="interes" required>
-
-                    <label for="salidas">Salidas:</label>
-                    <input type="number" placeholder="Ej: $2200" id="salidas" name="salidas" required>
-
-                    <button type="submit" id="calcular">Calcular</button>
-                </div>
-
-                <div class="resultado">
-                    <div class="boton-salir">
-                        <button id="salir">Salir</button>
-                    </div>
-                    <h4>Resultado:</h4>
-                    <div class="resp"></div>
-                </div>
-
-            </form>
-
+        <main id="main">
+            
+            
+            
         </main>
-    </article>
+    </div>
 
 
 

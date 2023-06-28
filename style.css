@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: #77a69c;
+   
 }
 
 .logo {
@@ -28,7 +28,7 @@ header {
 }
 
 .abrir-menu svg {
-    color: #1c1c1c;
+    color: white;
     width: 36px;
     height: 36px;
     border-radius: 7px;
@@ -78,8 +78,7 @@ header {
     align-items: center;
 }
 
-.nav.visible,
-.contenedor.visible {
+.nav.visible{
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
@@ -111,14 +110,19 @@ h3 {
 
 /* MAIN */
 
-.article{
-    background-color: #a4f0b8;
-    height: 100vh;
+
+
+.cont-principal{
+    
+    background: linear-gradient(93deg, #96BBBB, #414535);
+    height: 1400px;
 }
 
 .contenedor {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    margin-top: 50px;
   }
 
 .formulario{
@@ -185,19 +189,82 @@ label{
     display: flex;
     justify-content: end;
     margin-right: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-#salir{
+#salir,#salir2{
     width: 50px;
-    height: 50px;
+    height: 40px;
     background-color: #bd2c2c;
     color: white;
     font-size: 1rem;
+    border-radius: 20%;
+    
 }
 
 h4{
     font-size: 1rem;
     color: white;
     margin: 15px;
+}
+
+
+.contenedor2{
+
+    width: 400px;
+    height: 400px;
+    background-color: #1c1c1c;
+    margin: auto;
+    border-radius: 15px;
+}
+
+@media (max-width:500px){
+    .contenedor2{
+        max-width: 90%;
+    }
+}
+
+.formulario2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#inpBuscarID{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 4px solid #bd2c2c;
+    color: white;
+    font-size: 1.5rem;
+
+
+}
+
+#btnBuscarID{
+    height: 40px;
+    width: 150px;
+    background-color: #bd2c2c;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.resultadoBusquedaID{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.boton-salir2{
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
